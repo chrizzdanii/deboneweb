@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop | Debone Photos and Video Editing Studio</title>
+<meta name="description" content="Order computer accessories, cables, storage and photography gear from Debone Studio, Port Harcourt. Order sent straight to WhatsApp or email — no card needed.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">DeBoNe <em>STUDIO</em></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html"><span class="num">001</span>Home</a></li>
+        <li><a href="about.html"><span class="num">002</span>About</a></li>
+        <li><a href="services.html"><span class="num">003</span>Services</a></li>
+        <li><a href="shop.html" class="active"><span class="num">004</span>Shop</a></li>
+        <li><a href="gallery.html"><span class="num">005</span>Gallery</a></li>
+        <li><a href="contact.html"><span class="num">006</span>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="shop.html" class="cart-pill">🛒 <span id="navCartCount">0</span></a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Contact Now</a>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">004 — SHOP</div>
+    <h1>The accessories counter.</h1>
+    <p>Add what you need, then send the order straight to us on WhatsApp or email — no card, no fuss. Pay on pickup or delivery.</p>
+  </div>
+</section>
+
+<section style="padding-top:56px;">
+  <div class="container">
+    <div class="shop-layout">
+      <div>
+        <div class="shop-toolbar">
+          <button class="chip active" data-filter="All">All</button>
+          <button class="chip" data-filter="Accessories">Accessories</button>
+          <button class="chip" data-filter="Audio">Audio</button>
+          <button class="chip" data-filter="Cables">Cables</button>
+          <button class="chip" data-filter="Storage">Storage</button>
+          <button class="chip" data-filter="Printer">Printer</button>
+          <button class="chip" data-filter="Photography">Photography</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <p class="form-note" style="margin-top:24px;">Prices shown are sample listings — contact us to confirm current stock and pricing.</p>
+      </div>
+
+      <aside class="cart-panel">
+        <h3>Your Order <span class="count" id="cartCount">0</span></h3>
+        <div id="cartItems"></div>
+        <div class="cart-total"><span>Total</span><strong id="cartTotal">₦0</strong></div>
+        <button class="btn btn-primary btn-block" id="checkoutWhatsApp" style="margin-bottom:10px;">Order via WhatsApp</button>
+        <button class="btn btn-outline-dark btn-block" id="checkoutEmail">Order via Email</button>
+        <p class="form-note" style="color:#B7AC98;">No online payment — we'll confirm total and delivery with you directly.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Looking for something not listed?</h2>
+    <p>Message us what you need — we'll source it or point you in the right direction.</p>
+    <a href="contact.html" class="btn btn-outline-dark">Contact Now</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;">DeBoNe <em>STUDIO</em></div>
+        <p>Quality photography, videography, training and computer services in Port Harcourt since 2006.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Head Office</h4>
+        <p>179 Old Refinery Road, Elelenwo, Port Harcourt, Rivers State</p>
+        <h4 style="margin-top:18px;">Branch Office</h4>
+        <p>Umusukpu Playground, Igbo Etche, Rivers State</p>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:+2348035988889">0803 598 8889</a></li>
+          <li><a href="tel:+2348139763301">0813 976 3301</a></li>
+          <li><a href="mailto:bonechidi@gmail.com">bonechidi@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Debone Photos and Video Editing Studio. All rights reserved.</span>
+      <span>Port Harcourt, Rivers State, Nigeria</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>
