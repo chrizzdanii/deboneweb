@@ -11,29 +11,32 @@
 
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="logo">DeBoNe <em>STUDIO</em></a>
+    <a href="index.html" class="logo"><span class="dot"></span>DeBoNe <em>Studio</em></a>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html"><span class="num">001</span>Home</a></li>
-        <li><a href="about.html" class="active"><span class="num">002</span>About</a></li>
-        <li><a href="services.html"><span class="num">003</span>Services</a></li>
-        <li><a href="shop.html"><span class="num">004</span>Shop</a></li>
-        <li><a href="gallery.html"><span class="num">005</span>Gallery</a></li>
-        <li><a href="contact.html"><span class="num">006</span>Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme">☀️</button>
       <a href="shop.html" class="cart-pill">🛒 <span id="navCartCount">0</span></a>
       <a href="contact.html" class="btn btn-primary btn-sm">Contact Now</a>
-      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
   </div>
 </header>
 
 <section class="page-hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
   <div class="container">
-    <div class="breadcrumb">002 — ABOUT US</div>
-    <h1>Sixteen people, one focus:<br>get it right, every frame.</h1>
+    <div class="eyebrow">About Us</div>
+    <h1>Sixteen people, one focus:<br>get it right, every time.</h1>
     <p>Debone Photos and Video Editing Studio is a Port Harcourt company built on quality product and honest service — for every customer, every time.</p>
   </div>
 </section>
@@ -41,22 +44,20 @@
 <section>
   <div class="container two-col">
     <div>
-      <div class="eyebrow">OUR STORY</div>
-      <h2>Founded in 2006, still developing.</h2>
-      <p>What started as a small photo and video outfit in Port Harcourt has grown into a full studio — covering events, training the next generation of editors, and keeping the city's computers and printers running.</p>
+      <div class="eyebrow">Our Story</div>
+      <h2>Founded in 2006, still growing.</h2>
+      <p>What started as a small photo and video outfit in Port Harcourt has grown into a full studio — covering events, training the next generation of editors and AI-ready professionals, and keeping the city's computers and printers running.</p>
       <p>We're a company that focuses on offering quality products, goods and services to people in any part of the world we can reach — starting right here in Rivers State.</p>
       <div class="tag-list">
         <span>Wedding Photography</span>
         <span>Videography</span>
         <span>Editing Training</span>
+        <span>AI Automation</span>
         <span>Computer Repair</span>
-        <span>Cyber Café</span>
       </div>
     </div>
-    <div class="contact-sheet" style="grid-template-columns:repeat(2,1fr);">
-      <div class="frame selected" style="grid-column:span 2;"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" alt="Debone team training session"><span class="fnum">TEAM</span></div>
-      <div class="frame"><img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=500&q=80" alt="Photographer at work"><span class="fnum">009</span></div>
-      <div class="frame"><img src="https://images.unsplash.com/photo-1568205612837-017257d2310a?w=500&q=80" alt="Business center"><span class="fnum">010</span></div>
+    <div class="feature-photo">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" alt="Debone team training session">
     </div>
   </div>
 </section>
@@ -64,10 +65,10 @@
 <section class="band">
   <div class="container">
     <div class="stat-grid">
-      <div><span class="n">2006</span><span class="l">Year Founded</span></div>
-      <div><span class="n">10</span><span class="l">Male Staff</span></div>
-      <div><span class="n">6</span><span class="l">Female Staff</span></div>
-      <div><span class="n">2</span><span class="l">Office Locations</span></div>
+      <div class="stat-card"><span class="n">2006</span><span class="l">Year Founded</span></div>
+      <div class="stat-card"><span class="n">10</span><span class="l">Male Staff</span></div>
+      <div class="stat-card"><span class="n">6</span><span class="l">Female Staff</span></div>
+      <div class="stat-card"><span class="n">2</span><span class="l">Office Locations</span></div>
     </div>
   </div>
 </section>
@@ -75,12 +76,12 @@
 <section>
   <div class="container two-col">
     <div>
-      <div class="eyebrow">MISSION</div>
+      <div class="eyebrow">Mission</div>
       <h2>Quality product, quality service, no shortcuts.</h2>
       <p>Our dedicated team is passionate about helping people achieve their dreams — whether that's a perfectly captured wedding day, a new editing skill, or a working computer again. Since 2006, that mission hasn't changed.</p>
     </div>
     <div>
-      <div class="eyebrow">WHO WE ARE</div>
+      <div class="eyebrow">Who We Are</div>
       <h2>A team built across two locations.</h2>
       <p>Sixteen dedicated staff — ten men and six women — work across our head office and branch office to cover events, run training classes, repair equipment and keep the shop stocked.</p>
       <div class="team-strip">
@@ -94,19 +95,19 @@
   </div>
 </section>
 
-<section>
+<section class="band">
   <div class="container">
     <div class="section-head">
       <h2>Two locations, one standard.</h2>
     </div>
     <div class="grid-2">
       <div class="office-card">
-        <div class="eyebrow">HEAD OFFICE</div>
+        <div class="eyebrow">Head Office</div>
         <h4>Old Refinery Road, Elelenwo</h4>
         <p>179 Old Refinery Road, Elelenwo, Port Harcourt, Rivers State, Nigeria.</p>
       </div>
       <div class="office-card">
-        <div class="eyebrow">BRANCH OFFICE</div>
+        <div class="eyebrow">Branch Office</div>
         <h4>Umusukpu Playground, Igbo Etche</h4>
         <p>Umusukpu Playground, Igbo Etche, Rivers State, Nigeria.</p>
       </div>
@@ -118,7 +119,7 @@
   <div class="container">
     <h2>Want to work with us?</h2>
     <p>Whether it's a booking, a training enrolment or a repair — we're one message away.</p>
-    <a href="contact.html" class="btn btn-outline-dark">Contact Now</a>
+    <a href="contact.html" class="btn btn-white">Contact Now</a>
   </div>
 </section>
 
@@ -126,7 +127,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="logo" style="margin-bottom:14px;">DeBoNe <em>STUDIO</em></div>
+        <div class="logo" style="margin-bottom:14px;"><span class="dot"></span>DeBoNe Studio</div>
         <p>Quality photography, videography, training and computer services in Port Harcourt since 2006.</p>
       </div>
       <div>

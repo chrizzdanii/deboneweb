@@ -11,28 +11,31 @@
 
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="logo">DeBoNe <em>STUDIO</em></a>
+    <a href="index.html" class="logo"><span class="dot"></span>DeBoNe <em>Studio</em></a>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html"><span class="num">001</span>Home</a></li>
-        <li><a href="about.html"><span class="num">002</span>About</a></li>
-        <li><a href="services.html"><span class="num">003</span>Services</a></li>
-        <li><a href="shop.html"><span class="num">004</span>Shop</a></li>
-        <li><a href="gallery.html"><span class="num">005</span>Gallery</a></li>
-        <li><a href="contact.html" class="active"><span class="num">006</span>Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme">☀️</button>
       <a href="shop.html" class="cart-pill">🛒 <span id="navCartCount">0</span></a>
       <a href="contact.html" class="btn btn-primary btn-sm">Contact Now</a>
-      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
   </div>
 </header>
 
 <section class="page-hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
   <div class="container">
-    <div class="breadcrumb">006 — CONTACT</div>
+    <div class="eyebrow">Contact</div>
     <h1>Got any question?<br>Don't hesitate.</h1>
     <p>Reach us by phone, WhatsApp, email, or visit either of our Port Harcourt offices.</p>
   </div>
@@ -40,8 +43,8 @@
 
 <section>
   <div class="container contact-layout">
-    <div>
-      <div class="eyebrow">SEND A MESSAGE</div>
+    <div class="contact-card">
+      <div class="eyebrow">Send a Message</div>
       <h2>Tell us what you need.</h2>
       <p>Fill this out and it'll open pre-filled in WhatsApp, ready to send.</p>
       <form id="contactForm">
@@ -61,6 +64,7 @@
             <option>Photography & Videography</option>
             <option>Photo Editing Training</option>
             <option>Video Editing Training</option>
+            <option>AI Automation Training</option>
             <option>Computer Training School</option>
             <option>Computer Repair</option>
             <option>Printer Repair</option>
@@ -74,12 +78,12 @@
           <textarea id="cf-message" required placeholder="Tell us about your event, order, or enquiry..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Send via WhatsApp</button>
-        <p class="form-note">Prefer email? Write to <a href="mailto:bonechidi@gmail.com" style="border-bottom:1px solid var(--safelight);">bonechidi@gmail.com</a></p>
+        <p class="form-note">Prefer email? Write to <a href="mailto:bonechidi@gmail.com" style="color:var(--cyan); font-weight:600;">bonechidi@gmail.com</a></p>
       </form>
     </div>
 
     <div>
-      <div class="eyebrow">QUICK CONTACT</div>
+      <div class="eyebrow">Quick Contact</div>
       <div class="contact-quick" style="margin-bottom:28px;">
         <a href="tel:+2348035988889" class="quick-btn">📞 0803 598 8889</a>
         <a href="tel:+2348139763301" class="quick-btn">📞 0813 976 3301</a>
@@ -89,7 +93,7 @@
       </div>
 
       <div class="office-card">
-        <div class="eyebrow">HEAD OFFICE</div>
+        <div class="eyebrow">Head Office</div>
         <h4>Old Refinery Road, Elelenwo</h4>
         <p style="margin-bottom:0;">179 Old Refinery Road, Elelenwo, Port Harcourt, Rivers State, Nigeria.</p>
       </div>
@@ -98,7 +102,7 @@
       </div>
 
       <div class="office-card">
-        <div class="eyebrow">BRANCH OFFICE</div>
+        <div class="eyebrow">Branch Office</div>
         <h4>Umusukpu Playground, Igbo Etche</h4>
         <p style="margin-bottom:0;">Umusukpu Playground, Igbo Etche, Rivers State, Nigeria.</p>
       </div>
@@ -113,7 +117,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="logo" style="margin-bottom:14px;">DeBoNe <em>STUDIO</em></div>
+        <div class="logo" style="margin-bottom:14px;"><span class="dot"></span>DeBoNe Studio</div>
         <p>Quality photography, videography, training and computer services in Port Harcourt since 2006.</p>
       </div>
       <div>

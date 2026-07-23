@@ -1,4 +1,3 @@
-// ---- Product catalog (sample placeholder inventory — swap in real stock) ----
 const PRODUCTS = [
   { id: 'p1', name: 'USB Flash Drive 64GB', category: 'Accessories', price: 6500, img: 'https://images.unsplash.com/photo-1618410320928-25228d811631?w=500&q=80', tag: 'Bestseller' },
   { id: 'p2', name: 'Wireless Bluetooth Earbuds', category: 'Audio', price: 15000, img: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&q=80', tag: 'New' },
@@ -14,12 +13,8 @@ const PRODUCTS = [
   { id: 'p12', name: 'Ring Light with Tripod', category: 'Photography', price: 22000, img: 'https://images.unsplash.com/photo-1600861195091-690c92f1d2cd?w=500&q=80', tag: 'New' },
 ];
 
-// in-memory cart — resets on page reload (no localStorage per environment constraints)
 let cart = [];
-
-function formatNaira(n) {
-  return '₦' + n.toLocaleString('en-NG');
-}
+function formatNaira(n) { return '₦' + n.toLocaleString('en-NG'); }
 
 function renderProducts(filter) {
   const grid = document.getElementById('productGrid');
@@ -106,9 +101,8 @@ function checkoutEmail() {
   if (cart.length === 0) { showToast('Add a product before checking out'); return; }
   const lines = cart.map(c => `${c.qty} x ${c.name} (${formatNaira(c.price)} each)`).join('%0D%0A');
   const total = cart.reduce((s, c) => s + c.qty * c.price, 0);
-  const subject = 'New Order from Website';
   const body = `Order details:%0D%0A${lines}%0D%0A%0D%0ATotal: ${formatNaira(total)}%0D%0A%0D%0AName:%0D%0APhone:%0D%0ADelivery/Pickup:`;
-  window.location.href = `mailto:bonechidi@gmail.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:bonechidi@gmail.com?subject=New Order from Website&body=${body}`;
 }
 
 function showToast(msg) {
@@ -122,7 +116,6 @@ function showToast(msg) {
 document.addEventListener('DOMContentLoaded', function () {
   renderProducts('All');
   renderCart();
-
   document.querySelectorAll('.chip').forEach(chip => {
     chip.addEventListener('click', () => {
       document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -130,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function () {
       renderProducts(chip.getAttribute('data-filter'));
     });
   });
-
   const waBtn = document.getElementById('checkoutWhatsApp');
   const emailBtn = document.getElementById('checkoutEmail');
   if (waBtn) waBtn.addEventListener('click', checkoutWhatsApp);

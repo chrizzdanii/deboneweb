@@ -11,34 +11,37 @@
 
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="logo">DeBoNe <em>STUDIO</em></a>
+    <a href="index.html" class="logo"><span class="dot"></span>DeBoNe <em>Studio</em></a>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html"><span class="num">001</span>Home</a></li>
-        <li><a href="about.html"><span class="num">002</span>About</a></li>
-        <li><a href="services.html"><span class="num">003</span>Services</a></li>
-        <li><a href="shop.html" class="active"><span class="num">004</span>Shop</a></li>
-        <li><a href="gallery.html"><span class="num">005</span>Gallery</a></li>
-        <li><a href="contact.html"><span class="num">006</span>Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme">☀️</button>
       <a href="shop.html" class="cart-pill">🛒 <span id="navCartCount">0</span></a>
       <a href="contact.html" class="btn btn-primary btn-sm">Contact Now</a>
-      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
   </div>
 </header>
 
 <section class="page-hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
   <div class="container">
-    <div class="breadcrumb">004 — SHOP</div>
+    <div class="eyebrow">Shop</div>
     <h1>The accessories counter.</h1>
     <p>Add what you need, then send the order straight to us on WhatsApp or email — no card, no fuss. Pay on pickup or delivery.</p>
   </div>
 </section>
 
-<section style="padding-top:56px;">
+<section style="padding-top:60px;">
   <div class="container">
     <div class="shop-layout">
       <div>
@@ -60,8 +63,8 @@
         <div id="cartItems"></div>
         <div class="cart-total"><span>Total</span><strong id="cartTotal">₦0</strong></div>
         <button class="btn btn-primary btn-block" id="checkoutWhatsApp" style="margin-bottom:10px;">Order via WhatsApp</button>
-        <button class="btn btn-outline-dark btn-block" id="checkoutEmail">Order via Email</button>
-        <p class="form-note" style="color:#B7AC98;">No online payment — we'll confirm total and delivery with you directly.</p>
+        <button class="btn btn-outline btn-block" id="checkoutEmail">Order via Email</button>
+        <p class="form-note">No online payment — we'll confirm total and delivery with you directly.</p>
       </aside>
     </div>
   </div>
@@ -71,7 +74,7 @@
   <div class="container">
     <h2>Looking for something not listed?</h2>
     <p>Message us what you need — we'll source it or point you in the right direction.</p>
-    <a href="contact.html" class="btn btn-outline-dark">Contact Now</a>
+    <a href="contact.html" class="btn btn-white">Contact Now</a>
   </div>
 </section>
 
@@ -79,7 +82,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="logo" style="margin-bottom:14px;">DeBoNe <em>STUDIO</em></div>
+        <div class="logo" style="margin-bottom:14px;"><span class="dot"></span>DeBoNe Studio</div>
         <p>Quality photography, videography, training and computer services in Port Harcourt since 2006.</p>
       </div>
       <div>
